@@ -10,25 +10,6 @@ A cloud-native web application that automatically generates captions and thumbna
 - **thumbnail-package.zip**: Contains PIL library and image processing code
 - **Image-caption-app.zip**: Flask web application code
 
-### Environment Variables
-
-- Caption Lambda
-```
-DB_HOST=image-app-db.cqi7uwt3hkvj.us-east-1.rds.amazonaws.com
-DB_NAME=image_caption_db
-DB_USER=admin
-DB_PASSWORD=imagePassword!
-GOOGLE_API_KEY=AIzaSyBlEbQP4zbYOqcYL_-Sv_KhlBsfo2ZWbUE
-```
-
-- Thumbnail Lambda
-```
-DB_HOST=image-app-db.cqi7uwt3hkvj.us-east-1.rds.amazonaws.com
-DB_NAME=image_caption_db
-DB_USER=admin
-DB_PASSWORD=imagePassword!
-```
-
 - Database Schema
 ```sql
 CREATE TABLE captions (
@@ -41,7 +22,6 @@ CREATE TABLE captions (
     thumbnail_generated_at TIMESTAMP NULL
 );
 ```
-
 
 ## Architecture Overview
 
@@ -120,6 +100,7 @@ Event-driven serverless components handle caption/thumbnail processing:
 Validated auto-scaling behavior with sustained traffic:
 
 ![Load Test](loadtest.png)
+
 
 
 

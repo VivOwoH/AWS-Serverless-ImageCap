@@ -1,6 +1,6 @@
 # AWS Image Caption App with Serverless Architecture
 
-A cloud-native web application that automatically generates captions and thumbnails for uploaded images using AWS serverless computing and Google's Gemini AI. See [deployment report](deployment\report.pdf) for full details.
+A cloud-native web application that automatically generates captions and thumbnails for uploaded images using AWS serverless computing and Google's Gemini AI. See [deployment report](deployment%20report.pdf) for full details.
 
 ## Deployment
 
@@ -120,4 +120,5 @@ Event-driven serverless components handle caption/thumbnail processing:
 Validated auto-scaling behavior with sustained traffic:
 
 ![Load Test](loadtest.png)
+
 
